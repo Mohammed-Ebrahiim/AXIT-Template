@@ -1,0 +1,744 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color : white;
+    --orange-color : orange;
+}
+.mainpage{
+    width: 100%;
+    height: calc(100vh - 75px);
+    background-image: url(../images/header-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000047;
+}
+.container{
+    width: 80%;
+    margin: auto;
+}
+.mainpage .container .left{
+    float: left;
+}
+.mainpage .container .right{
+    float: right;
+}
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: black;
+    height: 75px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+header h2{
+    color: var(--main-color);
+    font-size: 30px;
+    text-transform: uppercase;
+    float: left;
+    margin-top: 20px;
+}
+header span{
+    color: tomato;
+}
+header ul{
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    list-style-type: none;
+    float: right;
+    margin-top: 20px;
+}
+header li{
+    display: inline-block;
+}
+header ul li a{
+    color: var(--main-color);
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+}
+header ul li a:hover{
+    color: tomato;
+}
+.mainpage .container .text{
+    margin-top: 120px;
+    color: var(--main-color);
+}
+.mainpage .container .text h1{
+    text-transform: uppercase;
+    font-size: 80px;
+}
+.mainpage .container .text span{
+    color: tomato;
+}
+.mainpage .container .text h5{
+    font-size: 30px;
+    font-weight: normal;
+    font-family: Arial;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 30px;
+}
+/* .mainpage .container .text h5::after{
+    /* position: absolute; */
+    content: '';
+    width: 50px;
+    height: 1px;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+    transform: translatex(-50);
+} */
+.mainpage .container .text hr{
+    width: 60px;
+    height: 1px;
+    margin-bottom: 30px;
+}
+.mainpage .container .text p{
+    line-height: 1.5;
+    color: rgb(185, 179, 179);
+}
+.mainpage .container .text button{
+    margin-top: 50px;
+    padding: 5px 10px;
+    background-color: transparent;
+    color: var(--main-color);
+    font-size: 25px;
+    border: 2px solid white;
+}
+.mainpage .container .right{
+    float: right;
+    width: 400px;
+    margin-top: 100px;
+    text-align: center;
+    background-color: var(--main-color);
+  
+}
+.mainpage .container .right h3{
+    background-color: rgb(240, 234, 234);
+    width: 100%;
+    height: 50px;
+    color: black;
+    padding: 10px;
+}
+.mainpage .container .right h3 span{
+    color: red;
+    text-transform: uppercase;
+}
+.mainpage .container .right input{
+    width: 80%;
+    height: 70px;
+    border: none;
+    border-bottom: 1px solid gray;
+    margin: 10px auto;
+    padding: 0 10px;
+    padding-bottom: 0;
+    
+}
+.mainpage .container .right input:focus{
+    outline: none;
+}
+
+.mainpage .container .right button{
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    background-color: var(--orange-color);
+    color: var(--main-color);
+    font-weight: bold;
+    border: none;
+    
+}
+.clear{
+    clear: both;
+}
+/************************** Second Page ***********************************/
+
+.secondpage .header{
+    padding: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid gray;
+    box-shadow: 10px 10px 10px 10px red;
+}
+.secondpage .header .leftpart{
+    float: left;
+    padding-top: 0px;
+}
+.secondpage .header .leftpart h2{
+    color: black;
+    font-weight: bold;
+}
+.secondpage .header .leftpart p{
+    color: #928b90;
+    padding: 10px 0;
+}
+.secondpage .header .rightpart{
+    float: right;
+}
+.secondpage .header ul{
+    margin-top: 10px;
+}
+.secondpage .header ul li{
+    display: inline;
+    margin-left: 50px;
+    font-size: 40px;
+}
+.secondpage .header ul li a{
+    color: #928b90;
+}
+.secondpage .rightpart a.A:first-child:hover{
+    color: blue;
+}
+.secondpage .rightpart a.B:hover{
+    color: #1C9CEB;
+}
+.secondpage .rightpart a.C:hover{
+    color: #fc1500;
+}
+.secondpage .rightpart a.D:hover{
+    color: #630107;
+}
+.secondpage .rightpart a.E:hover{
+    color: orangered;
+}
+.secondpage .rightpart a.F:hover{
+    color: black;
+}
+.secondpage .rightpart a.G:hover{
+    color: red;
+}
+/************************************** third page *********************************************/
+.thirdpage{
+    background-color: #F5F5F5;
+    margin-top: 0px;
+    padding: 150px 0;
+}
+.thirdpage .leftside{
+    float: left;
+    width: 70%;
+}
+.thirdpage .leftside ul{
+    width: 90px;
+    list-style-type: none;
+    float: left;
+    margin-right: 100px;
+}
+.thirdpage .leftside ul li{
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    padding: 40px 20px;   
+}
+.thirdpage .leftside ul li{
+    background-color: #333333;
+}
+.thirdpage .leftside ul li:first-child{
+    background-color: #FF8A3A;
+    border-radius: 5px 5px 0 0;
+}
+.thirdpage .leftside ul li:nth-child(2){
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.thirdpage .leftside ul li:last-child{
+    border-radius: 0 0 5px 5px;
+}
+.thirdpage .leftside ul li a{
+    color: var(--main-color);
+    text-decoration: none;
+}
+.thirdpage .leftside h3{
+    text-transform: capitalize;
+    font-family: Arial;
+    margin-bottom: 40px;
+    font-weight: bold;
+}
+.thirdpage .leftside p{
+    margin-bottom: 25px;
+    letter-spacing: 1.2;
+    line-height: 1.2;
+    color: gray;
+}
+.thirdpage .leftside button{
+    width: 130px;
+    padding: 15px;
+    background-color: #FF8A3A;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 15px;
+}
+.thirdpage .rightside{
+    float: right;
+}
+/************************* Fourth page *********************/
+.fourthpage{
+    padding: 100px 0;
+}
+.fourthpage .leftside{ 
+    float: left;
+    width: 40%;
+    margin-right: 10%;
+}
+.fourthpage .leftside .image img{
+    width: 100%;
+}
+.fourthpage .leftside .image img.one{
+    margin-bottom:  -5px;
+}
+/*********************/
+.fourthpage .rightside{
+    float: right;
+}
+.fourthpage .rightside .text{
+    display: inline;
+}
+.fourthpage .rightside .text h2{
+    color: black;
+    display: inline;
+}
+.fourthpage .rightside .text hr{
+    height: 2px;
+    margin: 20px 0;
+    background-color: orangered;
+    border: none;
+}
+.fourthpage .rightside p{
+    margin-bottom: 25px;
+    letter-spacing: 1.2;
+    line-height: 1.2;
+    color: gray;
+}
+.info-div a{
+    color: black;
+   
+    font-size: 30px;
+    text-decoration: none;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    line-height: 3;
+    float: left;
+    
+    
+}
+.info-div .content {
+    float: left;
+    margin-left: -20px;
+    margin-top: 15px;
+}
+.info-div .content h4{
+    color: black;
+    margin-bottom: 10px;
+}
+/*****************PictureSection*****************/
+.PictureSection{
+    background-color: #F5F5F5;
+    margin-top: 0px;
+    padding: 150px 0;
+    height: 90vh;
+}
+.PictureSection .leftside{
+    float: left;
+    width: 50%;
+}
+.PictureSection .leftside h3{
+    font-weight: bold;
+    color: black;
+    font-family: Arial;
+}
+.PictureSection .leftside  hr{
+    width: 60px;
+    height: 2px;
+    margin: 20px 0;
+    background-color: orangered;
+    border: none;
+}
+.PictureSection .leftside p{
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: gray;
+}
+.PictureSection .rightside{
+    float: right;
+    width: 40%;
+}
+.PictureSection .rightside .image img{
+    margin-bottom: -5px;
+    width: 90%;
+}
+.PictureSection .rightside .image img.one{
+    margin-bottom:  -5px;
+}
+
+/* start stats section */
+.stats-section{
+    padding: 100px 0;
+}
+.stats-section .container .info{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.stats-section .info h3{
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+}
+.stats-section .info hr{
+    height: 2px;
+    width: 50px;
+    margin: 20px auto;
+    background-color: orangered;
+    border: none;
+}
+.stats-section .info p{
+    color: gray;
+}
+.stats-section .container .card{
+    float: left;
+    width: 32%;
+    text-align: center;
+    margin-right:  10px;
+    margin-top: 20px;
+}
+.stats-section .container .card i{
+    color: orangered;
+    font-size: 30px;
+    margin-bottom: 10px;
+    border: 1px solid red;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2;
+}
+.stats-section .container .card h2{
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+.stats-section .container .card p{
+    line-height: 1.3;
+    color: gray;
+}
+/**************** Pricing table ******************/
+.pricing-table{
+    background-color: #F5F5F5;
+    padding: 100px 0;
+    margin-top: 150px;
+}
+.pricing-table .container .info{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.pricing-table .info h3{
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+}
+.pricing-table .info hr{
+    height: 2px;
+    width: 50px;
+    margin: 20px auto;
+    background-color: orangered;
+    border: none;
+}
+.pricing-table .info p{
+    color: gray;
+}
+.pricing-table .cardcontainer{
+    margin: 100px 0 10px 0;
+}
+.pricing-table .card{
+    width: 30%;
+    height: 420px;
+    border-radius: 20px;
+    background-color: black;
+    float: left;
+    margin-left: 30px;
+    text-align: center;
+    color: white;
+}
+.pricing-table .cardcontainer .card h2{
+    color: white;
+    text-transform: capitalize;
+    padding: 20px;
+    border-bottom: 1px solid white;
+    background-color: black;
+}
+.pricing-table .cardcontainer .card h1{
+    font-size: 60px;
+    margin-top: 20px;
+    font-family: monospace;
+}
+.pricing-table .cardcontainer .card h1 span{
+    font-size: 30px;
+}
+.pricing-table .cardcontainer .card h4{
+    font-style: italic;
+    font-weight: normal;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-bottom: 4px solid orangered;
+}
+.pricing-table .cardcontainer .card ul{
+    background-color: white;
+    list-style-type: none;
+}
+.pricing-table .cardcontainer .card ul li{
+    color: gray;
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    text-transform: uppercase;
+}
+.pricing-table .cardcontainer .card2{
+    position: relative;
+    top: -40px;
+    height: 450px;
+   
+}
+.pricing-table .cardcontainer .card2 h4{
+    border-bottom: none;
+}
+.pricing-table .cardcontainer .card2 h3{
+    background-color: orangered;
+    font-weight: normal;
+    padding: 8px;
+}
+/*Customer comment section*/
+.customer-rate{
+    padding: 10px;
+    margin-top: 100px;
+    padding-bottom: 150px;
+}
+.customer-rate .container .info{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.customer-rate .info h3{
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+}
+.customer-rate .info hr{
+    height: 2px;
+    width: 50px;
+    margin: 20px auto;
+    background-color: orangered;
+    border: none;
+}
+.customer-rate .info p{
+    color: gray;
+}
+.customer-rate .cardcontainer .card{
+    background-color: #F4F4F4;
+    width: 30%;
+    padding: 20px;
+    float: left;
+    margin-left: 3%;
+    position: relative;
+}
+.customer-rate .cardcontainer .card .triangle{
+    position: absolute;
+    left: 35px;
+    top: 100%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 20px solid #dddddd;
+} 
+.customer-rate .cardcontainer .card img{
+    position: absolute;
+    bottom: -90%;
+    left: 10px;
+}
+.customer-rate .cardcontainer .card h2{
+    position: absolute;
+    left: 100px;
+    bottom: -60%;
+}
+.customer-rate .cardcontainer .card span{
+    position: absolute;
+    left: 100px;
+    bottom: -80%;
+    color: gray;
+}
+/**********************************/
+.About{
+    width: 100%;
+    height: 300px;
+    padding: 50px;
+    margin-top: 150px;
+    padding-bottom: 150px;
+    background-image: url(../images/bottom-bg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* .About ::after{
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   background-color: #0000000d;
+} */
+.About .overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #00000047;
+}
+.About .container .info{
+    text-align: center;
+    margin: 20px auto;
+}
+.About .info h3{
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+    color: white;
+    font-size: 30px;
+}
+.About .info hr{
+    height: 2px;
+    width: 80px;
+    margin: 20px auto;
+    background-color: white;
+    border: none;
+}
+.About .info p{
+    color: whitesmoke;
+    text-transform: capitalize;
+}
+.About .container .info button{
+    width: 140px;
+    color: white;
+    font-size: 18px;
+    margin: 20px auto;
+    padding: 15px 25px;
+    border: 2px solid white;
+    background-color: transparent;
+    cursor: pointer;
+}
+/**************Conact Section*****************/
+.contact {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 200px;
+}
+.contact .container .info{
+    text-align: center;
+    margin: 50px auto;
+}
+.contact .info h3{
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    letter-spacing: 2px;
+    color: black;
+    font-size: 30px;
+}
+.contact .info hr{
+    height: 2px;
+    width: 80px;
+    margin: 20px auto;
+    background-color: orangered;
+    border: none;
+}
+.contact .info p{
+    color: gray;
+    text-transform: capitalize;
+}
+.contact .form .inputs{
+    float: left;
+    width: 50%;
+}
+.contact .container .form input{
+    width: 90%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contact .container .form input:focus{
+    outline: none;
+}
+.contact .form input.message{
+    float: right;
+    width: 48%;
+    padding-bottom: 140px;
+}
+.contact button{
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 20px;
+    margin-left:  43%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/***************Footer******************/
+footer{
+    width: 100%;
+   
+    background-color: black;
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+footer a{
+    color: white;
+    margin-left: 40px;
+    font-size: 20px;
+}
+footer a:first-child:hover{
+    color: blue;
+}
+footer a:nth-child(2):hover{
+    color: #139cf1;
+}
+footer a:nth-child(3):hover{
+    color: red;
+}footer a:nth-child(4):hover{
+    color: brown;
+}footer a:nth-child(5):hover{
+    color: orangered;
+}
+footer a:nth-child(6):hover{
+    color: #1C9CEB;
+}
+footer a:nth-child(7):hover{
+    color: rgb(255, 0, 0);
+}
+footer h3{
+    font-weight: normal;
+    margin-top: 10px;
+}
